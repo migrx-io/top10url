@@ -21,6 +21,11 @@ A command-line utility that reads a file containing URLs and associated numerica
 
 * The file is read line by line to avoid loading the entire file into memory at once.
 
+`TODO:
+
+
+
+`
 
 
 ## Building, Running and Testing
@@ -65,7 +70,9 @@ make e2e
 *Generated test data will be in `bin` directory*
 
 18G in18G.txt
+
 1.7G in1_7G.txt
+
 1.7M in1_7Mb.txt
 
 ```sh
