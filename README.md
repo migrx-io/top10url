@@ -60,8 +60,39 @@ make tests
 make e2e
 ```
 
+### Generate test datasets
+
+*Generated test data will be in `bin` directory*
+
+18G in18G.txt
+1.7G in1_7G.txt
+1.7M in1_7Mb.txt
+
+```sh
+make gendata
+```
+Run `top10url`
+
+```sh
+./bin/top10url -file ./bin/in18G.txt -top 10
+```
+
 ### Clean 
 
 ```sh
 make clean
+```
+
+## Credits
+
+### RAM/CPU monitoring 
+
+Simple terminal helper to log ram/cpu usage 
+
+It can be run in a separate terminal session and will collect metrics for the running tool.
+
+```
+pip install psutil==6.0.0
+
+python ./scripts/showusage.py
 ```
