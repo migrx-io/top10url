@@ -7,19 +7,19 @@ A command-line utility that reads a file containing URLs and associated numerica
 
 ### Min-Heap Usage
 
-A min-heap is used to keep track of the top 10 largest values efficiently.
+* A min-heap is used to keep track of the top 10 largest values efficiently.
 
-The smallest value in the heap can be replaced by a larger value when encountered.
+* The smallest value in the heap can be replaced by a larger value when encountered.
 
-This ensures that only the largest 10 values are kept in the heap.
+* This ensures that only the largest 10 values are kept in the heap.
 
 ### Memory Efficiency
 
-Only the top 10 largest values and their associated URLs are kept in memory, making the program suitable for handling large files.
+* Only the top 10 largest values and their associated URLs are kept in memory, making the program suitable for handling large files.
 
 ### File Reading
 
-The file is read line by line to avoid loading the entire file into memory at once.
+* The file is read line by line to avoid loading the entire file into memory at once.
 
 
 
@@ -34,7 +34,7 @@ Make sure you have [Go installed](https://golang.org/doc/install).
 make build
 ```
 
-Built binary will be in `bin` directory
+*Built binary will be in `bin` directory*
 
 ### Run 
 
@@ -44,6 +44,7 @@ Built binary will be in `bin` directory
 ```
 
 `file_path` The absolute path to the input file containing URLs and values
+
 `number_of_urls` (Optional) The number of top URLs to output. Defaults to 10
 
 
