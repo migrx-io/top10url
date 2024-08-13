@@ -3,21 +3,20 @@ package main
 import (
 	"fmt"
 	"log"
-    "time"
-    "os"
+	"os"
+	"time"
 
-    "github.com/migrx-io/top10url/cmd"
-
+	"github.com/migrx-io/top10url/cmd"
 )
 
 func main() {
 
-    logger := log.New(os.Stderr, "", log.LstdFlags)
+	logger := log.New(os.Stderr, "", log.LstdFlags)
 
 	// Parse command-line arguments
 	filePath, topN := cmd.ParseArgs()
 
-    start := time.Now()
+	start := time.Now()
 
 	// Read and parse the file
 	urls, err := cmd.ProcessFile(filePath, topN)
@@ -30,7 +29,7 @@ func main() {
 		fmt.Println(url)
 	}
 
-    duration := time.Since(start)
-    logger.Printf("Successfully processed file in %v\n", duration)
+	duration := time.Since(start)
+	logger.Printf("Successfully processed file in %v\n", duration)
 
 }
