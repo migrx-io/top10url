@@ -21,11 +21,12 @@ A command-line utility that reads a file containing URLs and associated numerica
 
 * The file is read line by line to avoid loading the entire file into memory at once.
 
-`TODO:
 
-
-
-`
+> :warning: **TODO**: Future Improvements
+> 
+> Parallel Offset-Based Reading of File Chunks Using Goroutines
+>   * Splitting the File into Chunks: Divide the file into smaller chunks that can be processed independently.
+>   * Reading File in Sections: Use offsets to read only a part of the file at a time.
 
 
 ## Building, Running and Testing
