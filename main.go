@@ -24,12 +24,13 @@ func main() {
 		log.Fatalf("Error processing file: %v", err)
 	}
 
+	duration := time.Since(start)
+
 	// Output the results
 	for _, url := range urls {
 		fmt.Println(url)
 	}
 
-	duration := time.Since(start)
 	logger.Printf("Successfully processed file in %v\n", duration)
 
 }
