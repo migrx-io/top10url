@@ -24,7 +24,8 @@ tests:
 clean:
 	@rm -rf bin
 
-.PHONY: gendata
-gendata: build
+.PHONY: bench
+bench: clean build
 	@cd tests && for ((i=0; i<=10000; i++)); do cat ./testdata/1_in.txt >> ../bin/in.txt; done
 	@cd tests && for ((i=0; i<=1000; i++)); do cat ../bin/in.txt >> ../bin/in2.txt; done
+	@./bin/top10url -file ./bin/in2.txt
